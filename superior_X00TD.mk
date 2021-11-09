@@ -13,6 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 SUPERIOR_BUILD_TYPE := UNOFFICIAL
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
