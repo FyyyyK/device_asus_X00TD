@@ -10,21 +10,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+$(call inherit-product, vendor/xdroid/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
+XDROID_BUILD_TYPE := STBL-4.4
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := corvus_X00TD
+PRODUCT_NAME := xdroid_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
