@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_X00TD.mk
+    $(LOCAL_DIR)/xdroid_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_X00TD-userdebug
+    xdroid_X00TD-userdebug
 
