@@ -10,20 +10,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common superior stuff
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/stag/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-SUPERIOR_BUILD_TYPE := UNOFFICIAL
-TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.superior.maintainer=Kneba
+    ro.stag.maintainer=Kneba
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_X00TD
+PRODUCT_NAME := stag_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
