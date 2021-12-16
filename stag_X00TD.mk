@@ -16,10 +16,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.stag.maintainer=Kneba
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := stag_X00TD
 PRODUCT_DEVICE := X00TD
